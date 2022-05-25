@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="./asset/css/sty.css">
+
+    <title>OOP-Project-Basic data</title>
+  </head>
+  <body>
+
+
+    <div class="container">
+         <div class="row d-flex justify-content-center">
+             <div class="col-md-6">
+                 <div class="card shadow my-5">
+                     <div class="card-body">
+                      <h2>Add New Staff</h2>
+                      <div class="msg"></div>
+                       <form id="staff_add_form" method="POST">
+                        <div class="my-3">
+                            <label for="">Name</label>
+                            <input type="text" name="name" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Call</label>
+                            <input type="text" name="call" class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Location</label>
+                            <input type="text" name="location"  class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <label for="">Photo</label>
+                            <input type="text" name="photo"  class="form-control">
+                        </div>
+                        <div class="my-3">
+                            <input type="submit" class="btn btn-primary w-100">
+                        </div>
+                       </form>
+                     </div>
+                 </div>
+             </div>
+         </div>
+    </div>
+
+
+    <div class="container">
+      <div class="row d-flex justify-content-center">
+          <div class="col-md-8">
+              <div class="card shadow my-2">
+                  <div class="card-body">
+                 <h2>ALL Staff Data</h2>
+                 <table class="table table-striped">
+                   <thead>
+                     <tr>
+                       <th>#</th>
+                       <th>Name</th>
+                       <th>Call</th>
+                       <th>Location</th>
+                       <th>Photo</th>
+                       <th>Action</th>
+                     </tr>
+                   </thead>
+                   <tbody id="Staff_data_list">
+                   </tbody>
+                 </table>
+                  </div>
+              </div>
+          </div> 
+      </div>
+ </div>
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <!-- https://cdnjs.com/libraries/popper.js/2.5.4 -->
+    <!-- <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.4/umd/popper.min.js"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.min.js"
+    ></script> -->
+
+    <!-- More: https://getbootstrap.com/docs/5.0/getting-started/introduction/ -->
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
